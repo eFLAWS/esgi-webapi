@@ -148,14 +148,7 @@ if ($route === "users") {
     }
 }
 
-//Mon bloc qui ne marche pas
-/*
 include __DIR__ . "/functions/json-response.php";
 
 jsonResponse(404, [], ["success" => false, "error" => "Not found"]);
-*/
 
-//Votre bloc qui marche
-include __DIR__ . "/functions/json-response.php";
-
-jsonResponse(404, [], ["success" => false, "error" => "Not found"]);
