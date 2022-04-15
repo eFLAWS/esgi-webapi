@@ -1,0 +1,10 @@
+RewriteEngine on
+
+# Si le fichier n'existe pas
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Si le dossier n'existe pas
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rediriger tout sur le fichier index.php
+RewriteRule ^(.*)$ /esgi-webapi/index.php?route=$1 [L,QSA]
